@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Orbitron:wght@400;500;600;700;900&family=Poppins:ital@0;1&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.776);
+        }
+        .login-container {
+            overflow: hidden;
+            width: 100%;
+        }
+        .login-box {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+            background-color: #0096FF;
+        }
+        .username, .password, .sign-in-btn {
+            width: 100%;
+            height: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            position: relative;
+        }
+        .username input, .password input, .sign-in-btn button{
+            border: none;
+            outline: none;
+            width: 250px;
+            padding: 20px;
+            padding-left: 60px;
+            border-radius: 50px;
+        }
+        .sign-in-btn button {
+            padding-left: 0;
+            cursor: pointer;
+            color: #0096FF;
+            color: black;
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 50px 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.6);
+            border-radius: 20px;
+        }
+        .user-icon {
+            text-align: center;
+        }
+        .user-icon i{
+            font-size: 50px;
+            border-radius: 50%;
+            padding: 15px 20px;
+            background-color: white;
+            cursor:pointer;
+        }
+        .username i,
+        .password i {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translate(0%, -50%);
+
+            padding: 15px;
+            background-color: #0096FF;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .show-password {
+            position: relative;
+            top: 0;
+            left: 140px;
+        }
+        .show-password label {
+            /* position: absolute;
+            top: 0;
+            left: 0; */
+            font-size: 12px;
+        }
+
+
+    </style>
+
+    <script src="https://kit.fontawesome.com/56e0df62bd.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+<body>
+    <div class="container">
+        <p>lorem100</p>
+        <div class="login-container">
+            <div class="login-box">
+                <form action="">
+                    <span class="user-icon">
+                        <i class="fa-regular fa-user"></i>
+                        <!-- <i class="fas fa-user-secret"></i> -->
+                    </span>
+                    <div class="username">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input id="user-username" type="text" placeholder="Email ID">
+                    </div>
+                    <div class="password">
+                        <i class='fas fa-lock'></i>
+                        <input id="user-password" type="password" placeholder="Password">
+                    </div>
+                    <div class="show-password">
+                        <input id="show-password" type="checkbox" placeholder="Password">
+                        <label for="show-password">Show Password</label>
+                    </div>
+                    <div class="sign-in-btn">
+                        <button>Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -74,3 +74,10 @@ VALUES
         'Manhattan',
         'New York'
     );
+
+-- SQL Queries...
+* SQL Query To Primary Key: 
+* ALTER TABLE <table-name> DROP PRIMARY-KEY;
+
+-- Change the NOT NULL ---> NULl
+ALTER TABLE <table-name> MODIFY <coumn-name> int NULL;

@@ -1,0 +1,196 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(9,53,69);
+}
+.login-box {
+    background-color: rgb(9,53,69);
+    /* background-color: rgb(32,223,127); */
+    /* background-color: rgb(34,73,87); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.login-box {
+
+}
+.login h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.login {
+    padding: 20px;
+    /* border: 1px solid white; */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+/* hider the text of placeholder on the focus of input */
+.login input:focus::placeholder {
+    color: transparent;
+}
+.login-username {
+    padding: 20px;
+}
+.login-username input {
+    background-color: rgb(34,73,87);
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+.login-username input::placeholder {
+    color: whitesmoke;
+}
+.login-password input {
+    background-color: rgb(34,73,87);
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+.login-password input::placeholder {
+    color: whitesmoke;
+}
+
+.show-password {
+    margin: 5px 0;
+}
+.show-password label{
+    font-size: 12px;
+}
+#show-password {
+    background-color:rgb(34,73,87);
+}
+
+.sign-in-btn button {
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(32,223,127);
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.sign-in-btn button:hover {
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+.sign-in-btn button:after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    background-color: rgb(35, 188, 111);
+    transition: all 0.3s ease;
+
+    border-radius: 50%;
+    height: 0;
+}
+.sign-in-btn button:hover:after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(38, 178, 108);
+}
+
+
+@media screen and (max-width: 400px) {
+    .login-container {
+    }
+    .login-box {
+        justify-content: center;
+        width: 60%;
+        margin: 10px;
+        padding: 20px;
+        transform: rotate3d();
+        /* height: 200px; TODO */
+    }
+    .login h3 {
+        font-size: 20px;
+    }
+    .login {
+        padding: 20px;
+    }
+    .login-username {
+        padding: 20px;
+    }
+    .login-username input {
+        background-color: rgb(34,73,87);
+        outline: none;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: white;
+    }
+    .login-username input::placeholder {
+        color: whitesmoke;
+    }
+    .login-password input {
+        background-color: rgb(34,73,87);
+        outline: none;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: white;
+    }
+    .login-password input::placeholder {
+        color: whitesmoke;
+    }
+    /* .sign-in-btn button {
+        margin-top: 20px;
+        color: white;
+        background-color: rgb(32,223,127);
+        border-radius: 5px;
+        padding: 10px 15px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+    .sign-in-btn button:after {
+        content: '';
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgb(35, 188, 111);
+        transition: all 0.3s ease;
+        border-radius: 5px;
+    }
+    .sign-in-btn button:hover:after {
+        width: 100%;
+        background-color: rgb(38, 178, 108);
+    } */
+}

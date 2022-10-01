@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Orbitron:wght@400;500;600;700;900&family=Poppins:ital@0;1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+
+.navbar-blur-bg {
+    background:
+        linear-gradient(rgba(255,255,255,0.054), rgba(0,0,0,1)),
+        url("../img/nature-bg-2.jpg")    /* image */
+        top center / 1920px 75% /* position / size */
+        no-repeat                /* repeat */
+        fixed                    /* attachment */
+        padding-box              /* origin */
+        content-box              /* clip */
+        ;
+        /* rgb(50, 184, 198); */
+    width: 100%;
+    height: 75%;
+    filter: blur(3px);
+}
+
+.logo {
+    background-color: rgba(0,0,0,0.4);
+}
+.navbar ul {
+    display: flex;
+    padding: 10px 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+    box-shadow: 
+        -5px -5px 10px #FFFFFF50,
+        5px 5px 10px #00000090;
+}
+.navbar ul li {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+.navbar ul li a{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+}

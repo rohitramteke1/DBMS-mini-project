@@ -8,17 +8,24 @@
 
   <!-- Styling -->
   <link rel="stylesheet" href="./css/index.css">
-
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/help.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/navbar.css">
 
 </head>
+
 <body>
   <div class="navbar">
-    <h1>Navbar</h1>
+    <div class="navbar-blur-bg"></div>
+    <div class="logo"></div>
     <ul>
-      <li> <a href="#home">Home</a></li>
-      <li> <a href="#about">About</a></li>
-      <li> <a href="#contact">Contact</a></li>
-      <li> <a href="#help">Help</a></li>
+      <li> <a id="home-link" href="#home">Home</a></li>
+      <li> <a id="about-link" href="#about">About</a></li>
+      <li> <a id="contact-link" href="#contact">Contact</a></li>
+      <li> <a id="help-link" href="#help">Help</a></li>
     </ul>
   </div>
   <!-- End of Navbar -->
@@ -26,26 +33,41 @@
   <div class="container">
 
     <div id="home" class="home-container">
-      <h2>Home</h2>
+      <h1>Home</h1>
       <div class="home-main">
         <div>Home Main</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio laboriosam impedit qui illum eius dolores voluptas pariatur. Sunt officia illo voluptatum ab dolorem ad quo adipisci in. Repudiandae assumenda molestiae placeat consequuntur sint in doloribus eligendi similique natus quae hic totam eius sit sapiente porro molestias, inventore voluptatem sed temporibus cumque. In vitae aperiam dolore, ab natus, labore eligendi aut numquam voluptatibus sequi enim magnam distinctio voluptates quisquam blanditiis inventore corrupti eos. Nemo numquam dolores ullam eaque earum officiis similique ab accusamus qui ipsam! Illum, sunt atque laborum illo dignissimos ad delectus ut temporibus labore voluptas est magnam ab.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati a laboriosam labore voluptas eius illo quod est debitis mollitia. Autem quidem animi quasi, doloremque id laboriosam cumque, inventore facilis tempora impedit aperiam voluptates. Doloribus culpa, cumque autem, aspernatur omnis perspiciatis porro quia quas iusto ex consectetur quod sapiente, est praesentium excepturi saepe numquam! Quas rem quis accusantium odio harum, iure alias neque sint laudantium dicta, nobis porro excepturi quae dignissimos! Doloribus beatae, molestias culpa numquam earum error perferendis! Dolorum, molestiae minima sint vero veniam, voluptatibus id illo ex tenetur fugit adipisci maiores odit recusandae nemo quae ipsam laborum dicta alias officia nisi. Minus, cumque. Excepturi praesentium distinctio quos. Animi, maiores? Dignissimos culpa dolor explicabo autem fugiat sit sint? Eligendi delectus ex voluptate cum, sunt eius, debitis aperiam impedit provident minus quia eos asperiores ipsa nobis corrupti reprehenderit possimus. Commodi aliquam autem vel quos quae rerum, nemo repellendus similique repudiandae asperiores, ipsa cum quod delectus consequatur corporis laudantium! Saepe quasi ex explicabo modi ipsum nam nobis provident perspiciatis tempore cupiditate doloremque quisquam facilis sapiente neque, et ipsa minus impedit? Aut doloremque ab consequuntur voluptatibus quos facilis a recusandae quo neque dolorem quaerat, non ut nesciunt numquam commodi necessitatibus autem voluptates eveniet nemo laborum, suscipit placeat. Quidem tempore maxime exercitationem fugiat ad quae tempora incidunt molestiae, iusto, provident soluta similique voluptate libero dolores id! Molestias velit asperiores iste quidem ad dolorem blanditiis excepturi sit, similique explicabo maiores perferendis eum architecto dicta corporis modi ratione iure pariatur labore. Dolore fuga enim quasi nesciunt, porro quisquam. Tempora soluta dignissimos sunt nemo, repellat enim. Molestias possimus veniam cum consequuntur maxime. Delectus explicabo vero rem quidem dignissimos commodi corporis culpa eius dolorem, voluptatem maiores eligendi rerum harum, possimus reprehenderit ex reiciendis deleniti nostrum ullam animi architecto amet facere dolores fugit. Maxime amet fugiat aliquam hic consectetur.</p>
       </div>
 
-      <div class="home-content">
+      <div class="login-container">
+
         <!-- Student Login Box -->
-        <div class="student-login-container">
-          student-login-container
+        <div class="login-box">
+          <div class="login">
+            <h3>Sign in</h3>
+            <div class="login-username">
+              <input id="username" type="text" placeholder="Username">
+            </div>
+            <div class="login-password">
+              <input id="password" type="password" placeholder="Password">
+            </div>
+            <div class="show-password">
+              <input type="checkbox" name="show-password" id="show-password">
+              <label for="show-password">Show Password</label>
+            </div>
+            <div class="captcha">
+
+            </div>
+            <div class="sign-in-btn">
+              <button>Sign in</button>
+            </div>
+
+          </div>
         </div>
 
-        <!-- Teacher Login Box -->
-        <div class="teacher-login-container">
-          teacher-login-container
-        </div>
-
-        <!-- Admin Login Box -->
-        <div class="admin-login-container">
-          admin-login-container
-        </div>
       </div>
     </div>
     <!-- End of Home -->
@@ -76,7 +98,7 @@
 
 
 
-    <div class="footer-container">
+    <div id="footer" class="footer-container">
       <h1>Footer</h1>
       <div class="footer-content">
         <p>Copyright by &copy; rohit</p>
@@ -87,11 +109,18 @@
   </div>
   <!-- End of container -->
 
+  <footer>
 
+  </footer>
 </body>
 
 
 <!-- Bootsrap JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- JS -->
+<script src="./js/index.js"></script>
+<script src="./js/home.js"></script>
 
 </html>

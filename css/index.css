@@ -1,7 +1,13 @@
+/* font-family: 'Poppins' */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Orbitron:wght@400;500;600;700;900&family=Poppins:ital@0;1&display=swap');
+
 * {
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,13 +18,15 @@ body {
 .container {
     width: 100%;
     height: 100%;
+    font-family: 'Poppins';
 }
 
 .home-container {
     background-color: rgb(163, 255, 5);
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
+
 .about-container {
     background-color: rgb(232, 160, 116);
     width: 100%;
@@ -35,9 +43,33 @@ body {
     height: 100%;
 }
 
-
 .footer-container {
     background-color: red;
     width: 100%;
     height: 100%;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 400px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    .home-container{
+        background-color: rgb(22, 242, 242);
+    }
+    .about-container{
+        background-color: rgb(186, 138, 232);
+    }
+    .contact-container{
+        background-color: rgb(88, 244, 99);
+    }
+    .help-container{
+        background-color: rgb(28, 246, 228);
+    }
+    .footer-container{
+        background-color: rgb(37, 89, 246);
+    }
 }
